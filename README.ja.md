@@ -1,4 +1,21 @@
-# Import From Zip
+<p align="center">
+  <a href="https://github.com/tsukinokun">
+    <img src="https://img.shields.io/badge/Author-Tsukino-blue?style=flat-square&logo=github" alt="Author">
+  </a>
+  <a href="https://github.com/tsukinokun/ImportFromZip/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL%20v3.0-blue.svg?style=flat-square" alt="License: GPL v3.0">
+  </a>
+  <img src="https://img.shields.io/badge/Blender-4.2%2B-orange?style=flat-square&logo=blender" alt="Blender 4.2+">
+  <a href="https://qiita.com/tsukino_">
+    <img src="https://img.shields.io/badge/Qiita-tsukino__-brightgreen?style=flat-square&logo=qiita" alt="Qiita">
+  </a>
+</p>
+
+<p align="center">
+  <img src="image/Logo.png" alt="ImportFromZip Logo">
+</p>
+
+<h1 align="center">ImportFromZip</h1>
 
 [English README is here](README.md)
 
