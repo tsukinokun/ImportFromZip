@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+
+id = "import_from_zip"
+name = "Import From Zip"
+version = "1.0.0"
+tagline = "Import files directly from a ZIP archive"
+maintainer = "Tsukino <151311004+tsukinokun@users.noreply.github.com>"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:MIT"]
+
+tags = ["Import-Export"]
