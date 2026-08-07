@@ -11,6 +11,12 @@ website = "https://github.com/tsukinokun/ImportFromZip"
 
 blender_version_min = "4.2.0"
 
-license = ["SPDX:MIT"]
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+copyright = [
+  "2026 Tsukino",
+]
 
 tags = ["Import-Export"]
