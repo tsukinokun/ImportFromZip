@@ -1,0 +1,44 @@
+name: Release
+
+# v1.0.0 のような "v" から始まるタグを push すると発火します
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Verify manifest version matches tag
+        run: |
+          manifest_version=$(grep -m1 '^version' import_from_zip/blender_manifest.toml | sed -E 's/version *= *"([^"]+)"/\1/')
+          tag_version="${{ steps.version.outputs.version }}"
+          if [ "$manifest_version" != "$tag_version" ]; then
+            echo "::error::blender_manifest.toml の version ($manifest_version) とタグ ($tag_version) が一致しません"
+            exit 1
+          fi
+
+      - name: Build extension ZIP
+        run: |
+          cd import_from_zip
+          zip -r "../ImportFromZip-${{ steps.version.outputs.version }}.zip" . \
+            -x "__pycache__/*" "*.pyc" ".DS_Store"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ImportFromZip-${{ steps.version.outputs.version }}.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
