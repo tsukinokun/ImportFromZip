@@ -7,6 +7,8 @@ tagline = "Import files directly from a ZIP archive"
 maintainer = "Tsukino <151311004+tsukinokun@users.noreply.github.com>"
 type = "add-on"
 
+website = "https://github.com/tsukinokun/ImportFromZip"
+
 blender_version_min = "4.2.0"
 
 license = ["SPDX:MIT"]
