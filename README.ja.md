@@ -107,6 +107,9 @@ zip -j import_from_zip.zip __init__.py blender_manifest.toml
 Issue・Pull Requestを歓迎します。特に新しいフォーマット対応の追加は大歓迎です。
 詳しくは [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
 
+## 詳細
+- [解説記事(Qiita)](https://qiita.com/tsukino_/items/b3dda3704b48267863f87)
+
 ## 作者
 
 山﨑愛/Tsukino
