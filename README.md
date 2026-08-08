@@ -110,6 +110,9 @@ zip -j import_from_zip.zip __init__.py blender_manifest.toml
 Issues and pull requests are welcome -- especially ones adding support
 for new formats. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Documentation
+- [explanatory article(Qiita)](https://qiita.com/tsukino_/items/b3dda3704b48267863f87)
+
 ## Author
 
 山﨑愛/Tsukino
