@@ -1,8 +1,8 @@
-schema_version = "1.0.0"
+schema_version = "1.0.1"
 
 id = "import_from_zip"
 name = "Import From Zip"
-version = "1.0.0"
+version = "1.0.1"
 tagline = "Import files directly from a ZIP archive"
 maintainer = "Tsukino <151311004+tsukinokun@users.noreply.github.com>"
 type = "add-on"
