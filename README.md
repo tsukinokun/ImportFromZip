@@ -111,7 +111,7 @@ Issues and pull requests are welcome -- especially ones adding support
 for new formats. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Documentation
-- [explanatory article(Qiita)](https://qiita.com/tsukino_/items/b3dda3704b48267863f87)
+- [explanatory article(Qiita)](https://qiita.com/tsukino_/items/b3dda3704b48267863f8)
 
 ## Author
 
